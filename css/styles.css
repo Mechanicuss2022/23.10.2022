@@ -1,0 +1,21 @@
+  a 		{
+			text-decoration: none;
+			}
+
+a:hover 	{
+			text-decoration: underline;
+			}
+
+.right_block {
+			float: right; 
+			width: 16%;
+			border: 1px solid #a2a9b1;
+			background: #f8f9fa;
+			text-align: left;
+			padding: 10px 20px 10px 20px;
+			margin-left: 15px;
+			}
+			
+.centered_text {
+				text-align: center;
+				}

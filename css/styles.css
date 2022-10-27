@@ -8,14 +8,78 @@ a:hover 	{
 
 .right_block {
 			float: right; 
-			width: 16%;
+			width: auto;
+			max-width: 300px;
 			border: 1px solid #a2a9b1;
 			background: #f8f9fa;
 			text-align: left;
 			padding: 10px 20px 10px 20px;
 			margin-left: 15px;
 			}
+.left_block {
+			float: left; 
+			width: 30%;
+			border: 1px solid #a2a9b1;
+			background: #f8f9fa;
+			text-align: left;
+			padding: 10px 0px 10px 0px;
+			margin-left: 0px;
+			}
+.left_block_img {
+			float: left; 
+			width: 210px;
+			border: 1px solid #a2a9b1;
+			background: #f8f9fa;
+			text-align: left;
+			padding: 5px 5px 5px 5px;
+			margin-left: 0px;
+			margin-right: 20px;
+			}
+
+.right_block_img {
+			clear:both;
+			float: right; 
+			width: auto;
+			max-width: 220px;
+			border: 1px solid #a2a9b1;
+			background: #f8f9fa;
+			text-align: left;
+			padding: 5px 5px 5px 5px;
+			margin-left: 20px;
+			margin-right: 20px;
+			margin-top: 20px;
+			margin-bottom: 20px;
+
+
 			
 .centered_text {
 				text-align: center;
 				}
+				
+li 				{
+				list-style: none;
+				line-height: 150%;
+				} /* https://codepen.io/euphrit/pen/MWbgVoM multiLevelList Vasek Colombo */
+
+.zovn-list 		{
+				counter-reset: zovn;
+				}
+.vnutr-list 	{
+				counter-reset: vnutr;
+				}
+.vnutr-list3 	{
+				counter-reset: vnutr3;
+				}
+
+.zovn-list li::before 	{
+						content: counter(zovn) " ";
+						counter-increment: zovn; 
+						}
+.vnutr-list li::before 	{
+						content: counter(zovn)"."counter(vnutr) " ";
+						counter-increment: vnutr; 
+						}
+.vnutr-list3 li::before 	{
+						content: counter(zovn)"."counter(vnutr)"."counter(vnutr3) " ";
+						counter-increment: vnutr3; 
+						}
